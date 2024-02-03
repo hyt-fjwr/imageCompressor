@@ -32,7 +32,7 @@ def main():
     if folder_selected:
         # 出力先フォルダを指定
         output_folder = filedialog.askdirectory(title="Select Output Folder")
-        print("出力フォルダ : " + folder_selected)
+        print("出力フォルダ : " + output_folder)
         if output_folder:
             # 画像を指定の圧縮率で保存（Exifデータを保持）
             compress_images_in_folder(folder_selected, output_folder)
